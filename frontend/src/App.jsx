@@ -1,13 +1,27 @@
-// API Key: 05f5a33af25c4269ad7172012261702
+import { Routes, Route } from 'react-router-dom'
 
+import './App.css'
+import Home from './pages/Home'
+import Predict from './pages/Predict'
+import About from './pages/About'
+import Navbar from './components/Navbar'
 
-import React from 'react'
-
-export default function App() {
+function App() {
   return (
-    <div>
-      
+    <div className="app">
+      <Navbar />
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/predict" element={<Predict />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
+      <footer className="footer">
+        <p>© 2025 Flight Delay Predictor • Powered by ML & React</p>
+      </footer>
     </div>
   )
 }
 
+export default App

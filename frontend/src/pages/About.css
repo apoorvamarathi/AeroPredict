@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.about-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 800px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.about-card h3 {
+  color: #4a5568;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.about-card p,
+.about-card ul {
+  color: #718096;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.about-card ul {
+  padding-left: 1.5rem;
+}
+
+.about-card li {
+  margin-bottom: 0.5rem;
+}
